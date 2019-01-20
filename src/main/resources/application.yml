@@ -29,3 +29,10 @@ spring:
           min-idle: 0
       #连接超时时间
       timeout: 10000
+
+#security:
+#  basic:
+#    enabled: false
+
+  thymeleaf:
+    prefix: classpath:/templates/

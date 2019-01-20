@@ -3,8 +3,13 @@ package com.rechel.user.entity;
 import lombok.Data;
 
 import java.util.Date;
+import java.util.List;
+import java.util.Set;
 
-
+/**
+ * @Author: Rechel
+ * @Date: 2019/1/7 下午7:45
+ */
 @Data
 public class User {
 
@@ -20,20 +25,5 @@ public class User {
     private Date createtime;
     private String createby;
     private Date lastupdatetime;
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", usernum='" + usernum + '\'' +
-                ", username='" + username + '\'' +
-                ", fullname='" + fullname + '\'' +
-                ", password='" + password + '\'' +
-                ", phone='" + phone + '\'' +
-                ", email='" + email + '\'' +
-                ", createtime=" + createtime +
-                ", createby='" + createby + '\'' +
-                ", lastupdatetime=" + lastupdatetime +
-                '}';
-    }
+    private List<Role> roles;
 }

@@ -40,7 +40,6 @@ public class UserController {
     private StringRedisTemplate stringRedisTemplate;
 
 
-
     @GetMapping("getUsers")
     String getUsers() {
         List<User> list = userMapper.selectUser();
@@ -62,6 +61,12 @@ public class UserController {
         user.setUsername("rechel1");
 
         userMapper.insert(user);
+    }
+
+
+    @GetMapping("login")
+    public void login(){
+
     }
 
 
